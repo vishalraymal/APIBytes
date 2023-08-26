@@ -1,0 +1,36 @@
+-> Hamcrest is a well know assertion library used for unit testing along with jUnit
+-> Hamcrest can be used along with Rest Assured for assertion
+-> Uses matcher classes for making assertion
+
+Adv.
+----
+-> Human readable and plain in english
+-> Code is neat and intuitive 
+-> Provides thin methods like "is" and "not", also called as decorators for more readability.
+
+Hamcrest vs TestNG
+-----------------
+-> Readability
+-> Description error message
+-> Type Safety
+
+Collection matchers(List, Array, Map.. etc)
+-------------------------------------------
+hasItem() -> check single element in a collection
+not(hasItem()) -> check single element is NOT in a collection
+hasItems() -> Check all elements in a collection
+contains()-> check all elements are in a collection and are in a strict order
+containsInAnyOrder()-> Check all elements are in a collection and in any order
+empty() -> check if collection is empty
+not(emptyArray())-> check if the array is not empty
+hasSize() -> check size of collection
+everyItem(startsWith()) -> Check every item in a collection starts with specific string
+
+hasKey()  -> Map -> Check if Map has specified key(value not checked)
+hasValue() -> Map -> check if map has atleast one specified mapping value
+hasEntry() -> Map -> Check if Map has the specified key value pair
+equalTo(Collections.EMPTY_MAP) -> 	Maps[Check if empty]
+allOf() -> Matches if all matchers matches
+anyOf() -> Matches if any of matchers matches
+
+
